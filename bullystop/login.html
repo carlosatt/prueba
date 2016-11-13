@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<title>Bully Stop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div data-role="page" id="login">
+	<div data-role="header">
+	<h1>Bully Stop</h1>	
+	</div>
+	<div data-role="content" >
+		<form action="login_php.php" method="post" data-ajax="false">
+			<div class="ui-field-contain" >
+				<select name="modoLogin" id="modoLogin" data-native-menu="false" data-icon="user" data-iconpos="left">
+					<option data-placeholder="true" >Como desea iniciar</option>
+					<option value="student">Estudiante</option>
+					<option value="admin">Administrador</option>
+				</select>
+				
+				<input type="text" name="user" id="user" placeholder="ID de usuario" data-clear-btn="true" required="">
+				<input type="password" name="clave" id="clave" placeholder="Clave" data-clear-btn="true" required="">
+				<a href="javascript: window.location='registrar_usuario.php'" data-role="button" data-icon="user" data-iconpos="right" data-inline="true" >Registrarse</a>
+				<input type="submit" name="iniciarSesion" value="Iniciar Sesión" data-icon="action" data-iconpos="right" data-inline="true">
+			</div>
+		</form>
+	</div>
+	<div data-role="footer" class="ui-bar" data-position="fixed" data-iconpos="left">
+	<div data-role="controlgroup" data-type="horizontal">
+		<a data-icon="info">Acerca de</a>
+	</div>	
+	</div>
+</div>
+</body>
+</html>
